@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>تسجيل دخول | شيزلونج</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo-login.png">
+  <!--Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#"><img style="margin-right: 45%;" src="images/logo-login.png"></a>
+        <h4 style="text-align: center;margin: 50px;">دخول</h4>
+        <h5 id="ready" style="text-align: center;color:red;display:none;">لقد سجلت دخولك، سيتم توجيهك إلى <a href="profile.html"> صفحتك الشخصية</a></h5><br>
+        <form class="needs-validation" id="LoginForm" name="LoginForm" action="profile.html">
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" placeholder="عنوان البريد الإلكتروني *" name="uname" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="كلمة المرور *" name="pswd" required>
+          </div>
+          <button type="submit" class="btn btn-primary" name="submit" id="quickstart-sign-up">دخول</button>
+          <div id=sign-out></div>
+          <span style="margin-right: 40%;">أو&nbsp;&nbsp;<a href="register.html"> تسجيل حساب جديد</a></span>
+        </form>
+           
+      </div>
+
+      <div class="start">
+        <a href="#"><img src="images/logo-white.png"></a>
+        <h2>ابدأ رحلة العلاج النفسي في خصوصية تامة</h2>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script src="login.js"></script>
+      <script>
+
+      </script>
+</body>

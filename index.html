@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>شيزلونج | طبيب نفسي</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo-login.png">
+  <!--Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="shezlong.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark header" id="header">
+    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo-white.png" alt="logo" width="160" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">اختبارات نفسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">المجلة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary doc" href="#">المعالجين</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">انضم لأطباء شيزلونج</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b>Local: </b>Africa/Cairo</a>
+          <div class="dropdown-menu" id="myDropdown">
+            <input class="form-control mr-sm-2" type="text" id="myInput" onkeyup="filterFunction()" placeholder="&#128269;">
+            <h5 class="dropdown-header">Local:</h5>
+            <a class="dropdown-item" href="#">Africa/Cairo</a>
+            <h5 class="dropdown-header">Jordan:</h5>
+            <a class="dropdown-item" href="#">Asia/Amman</a>
+            <h5 class="dropdown-header">Iraq:</h5>
+            <a class="dropdown-item" href="#">Asia/Baghdad</a>
+            <h5 class="dropdown-header">Yemen:</h5>
+            <a class="dropdown-item" href="#">Asia/Aden</a>
+            <h5 class="dropdown-header">Bahrain:</h5>
+            <a class="dropdown-item" href="#">Asia/Bahrain</a>
+            <h5 class="dropdown-header">Palestie:</h5>
+            <a class="dropdown-item" href="#">Asia/Gaza</a>
+            <h5 class="dropdown-header">Kuwait:</h5>
+            <a class="dropdown-item" href="#">Asia/Kuwait</a>
+            <h5 class="dropdown-header">Algeria:</h5>
+            <a class="dropdown-item" href="#">Asia/Algiers</a>
+            <h5 class="dropdown-header">Niue:</h5>
+            <a class="dropdown-item" href="#">Pacific/Niue</a>
+            <h5 class="dropdown-header">American Samoa:</h5>
+            <a class="dropdown-item" href="#">Pacific/Pago Pago</a>
+            <h5 class="dropdown-header">United States Outlying Islands: </h5>
+            <a class="dropdown-item" href="#">Pacific/Midway</a>
+            <a class="dropdown-item" href="#">Pacific/Johnston</a>
+            <a class="dropdown-item" href="#">Pacific/Wake</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-globe-americas">&nbsp;</i>English</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" id="login" href="userlogin.html">دخول</a>
+        </li> 
+        <li class="nav-item new">
+          <a class="nav-link" id="user" href="register.html">حساب جديد</a>
+        </li>
+      </ul>  
+    </div>  
+  </nav>
+
+<br>
+<div class="talk">
+  <div class="online">
+    <h1 style="padding: 10px 0;">تحدث مع طبيبك النفسي أونلاين</h1>
+    <h3>بكل خصوصية في آي وقت ومن كل مكان</h3>
+  </div>
+  <a class="btn btn-primary">تعرف على المعالج الخاص بك</a>
+</div><br><br>
+
+<div class="container-fluid problems">
+  <div class="row">
+    <div class="col-sm-3"><a href="#"><img src="images/1.jpg"><h4>مشاكل الأطفال</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/2.jpg"><h4>مشاكل المراهقة</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/3.jpg"><h4>الاكتئاب</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/4.jpg"><h4>القلق والوسواس</h4></a></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"><a href="#"><img src="images/5.jpg"><h4>استشارات الزواج / مشاكل العلاقات</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/6.jpg"><h4>الإدمان</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/7.jpg"><h4>المشاكل الجنسية</h4></a></div>
+    <div class="col-sm-3"><a href="#"><img src="images/8.jpg"><h4>مشاكل الشيخوخة</h4></a></div>
+  </div>
+</div><br><br>
+
+<div class="how">
+  <h2>كيف يعمل شيزلونج؟</h2><br><br><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="images/doctor_.png">
+      <h5><span class="num">1- </span>اختر المعالج المناسب</h5>
+      <p>إبحث عن المعالج المناسب ضمن 100 طبيب ومعالج نفسي حسب التخصص او اللغة أو الدولة أو السعر المناسب لك.</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="images/calndar_.png">
+      <h5><span class="num">2- </span>احجز</h5>
+      <p>احجز ميعاد جلستك حسب المواعيد المتاحة واختار طريقة الدفع.</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="images/session_.png">
+      <h5><span class="num">3- </span>تكلم</h5>
+      <p>تكلم مع طبيبك في ميعاد الجلسة صوت وصورة أو صوت فقط حسب رغبتك.</p>
+    </div>
+    <a type="button" class="btn btn-primary">تعرف على المعالج الخاص بك</a>
+  </div>
+</div><br><br><br>
+<div class="opinions">
+  <h1>ما يقوله عملاؤنا <i class="fas fa-quote-left"></i></h1>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p>أنا لسة عايشة في نفس البلد ونفس البيت مع نفس الناس والصحاب والزمايل اللي بتعامل معاهم كل يوم.. وحجات كتيرة منهم لسه زي ماهي ويمكن في حاجات تزداد للأسوأ.. لكن اللي اتغير هي نفسيتي الحمدلله ونظرتي للحياة.. رجعت حابة إني أعيش وأجرب حاجات كتير وأستغل الحاجات الكويسة اللي ربنا ادهالي وانا كنت هدراها بقالي سنين.</p>
+      </div>
+      <div class="carousel-item">
+        <p>بقالى ٣٠ سنه بدور على حاجه واحده اني اتقبل...حد يسمعني...من غير ما اترفض...من غير ما حد يقيمني و ده لقيته هنا...اللي بقي بيتي شكرا ليكم شيزلونج.</p>
+      </div>
+      <div class="carousel-item">
+        <p>فكرة إني اروح اتكلم مع دكتور نفسي كانت من رابع المستحيلات إني الاقي وسيلة اعرف اعمل ده و اكسر حواجز كتير جوايا. فده بالنسبالي كان عظيم جداُ.</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  </div>
+</div><br><br>
+<div class="news">
+  <div class="row">
+    <div class="col-sm"><a href="#"><img src="images/wamda-grey.png"></a></div>
+    <div class="col-sm"><a href="#"><img src="images/logo-arabic-grey.png"></a></div>
+    <div class="col-sm"><a href="#"><img src="images/sada-tech-grey.png"></a></div>
+    <div class="col-sm"><a href="#"><img src="images/alyoumelsabe-grey.png"></a></div>
+    <div class="col-sm"><a href="#"><img src="images/scene-logo-grey.png"></a></div>
+    <div class="col-sm"><a href="#"><img src="images/egypt-independent-grey.png"></a></div>
+  </div>
+  <a href="#"><b>المزيد من الأخبار </b><span>&#9666;</span></a>
+</div><br><br><br>
+<div class="footer">
+  <div class="row">
+    <div class="col-sm">
+      <h6 class="title">شيزلونج</h6>
+      <a href="#">الشروط والأحكام</a><br>
+      <a href="#">سياسة الخصوصية</a><br>
+      <a href="#">الوظائف</a>
+    </div>
+    <div class="col-sm">
+      <h6 class="title">اعرف أكثر</h6>
+      <a href="#">المجلة</a><br>
+      <a href="#">أرقام الطواريْ</a><br>
+      <a href="#">الأسئلة الشائعة</a>
+    </div>
+    <div class="col-sm">
+      <h6 class="title">لأطباء شيزلونج</h6>
+      <a href="#">انضم الآن!</a>
+    </div>
+    <div class="col-sm">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></i></a><br>
+      <span>جميع الحقوق محفوظة لشيزلونج 2020</span><br>
+      <img class="logo1" src="images/appstore.png">&nbsp;<img class="logo1" src="images/googlestore.png"><br>
+      <span class="soon" style="margin-right: 35%;">قريبًا</span><br>
+      
+    </div>
+  </div>
+  <span class="emergency">اذا كنت في حالة تقضي المساعدة الفورية وهناك خطورة على حياتك، يرجى الاتصال مباشرًة برقم الطواريْ الخاص بمنطقتك !</span>
+  <div class="ssl"><a href="#"><img class="logo1" src="images/ssl-secure-bw-logo.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="logo2" src="images/ISMHO-grey.png"></a></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script src="header.js"></script>
+<script src="shezlong.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,57 @@
+.header { 
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    direction: rtl;
+    background: rgba(0,0,0,0.7);
+    transition: 0.5s;
+  }
+.header ul li {
+    margin: 0 7px;  
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header input {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 80%;
+    background: rgba(255,255,255,0.8);
+}
+.header .navbar-brand {
+    margin-left: 130px;
+    padding: 0px;
+}
+.header input::placeholder {
+    text-align: right;
+}
+.header .new {
+    border: 2px solid #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.header .logo {
+    padding: 0;
+    margin: 0;
+}
+.header .doc {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.header .new:hover {
+    background: rgba(255,255,255,0.1);
+}
+.header .dropdown-menu {
+    background: rgba(255,255,255,0.8);
+    direction: ltr;
+    margin-top: -5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 8px rgba(0,0,0,.25);
+    max-height: 350px;
+    width: 220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
