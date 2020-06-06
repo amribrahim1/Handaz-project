@@ -20,14 +20,22 @@
         <h5 id="ready" style="text-align: center;color:red;display:none;">لقد سجلت دخولك، سيتم توجيهك إلى <a href="profile.html"> صفحتك الشخصية</a></h5><br>
         <form class="needs-validation" id="LoginForm" name="LoginForm" action="profile.html">
           <div class="form-group">
-            <input type="text" class="form-control" id="email" placeholder="عنوان البريد الإلكتروني *" name="uname" required>
+            <input style="direction:ltr;" type="text" class="form-control" id="email" placeholder="عنوان البريد الإلكتروني *" name="email" required>
           </div>
           <div class="form-group">
             <input type="password" class="form-control" id="password" placeholder="كلمة المرور *" name="pswd" required>
           </div>
+          <a onclick="forget()" href="#"> نسيت كلمة المرور ؟</a>
           <button type="submit" class="btn btn-primary" name="submit" id="quickstart-sign-up">دخول</button>
           <div id=sign-out></div>
           <span style="margin-right: 40%;">أو&nbsp;&nbsp;<a href="register.html"> تسجيل حساب جديد</a></span>
+        </form>
+        <form class="needs-validation" id="ForgetForm" name="ForgetForm">
+          <div class="form-group">
+            <input style="direction:ltr;" type="text" class="form-control" id="emailforget" placeholder="عنوان البريد الإلكتروني *" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary" name="submit">إرسال</button>
+          <span style="margin-right: 45%;">أو&nbsp;&nbsp;<a onclick="remember()" href="#"> دخول</a></span>
         </form>
            
       </div>

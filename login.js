@@ -58,8 +58,39 @@ function submitForm(e) {
       });
       // [END authwithemail]
     }
-  }
+}
 
+function forget() {
+  document.getElementById('ForgetForm').style.display = 'block';
+  document.getElementById('LoginForm').style.display = 'none';
+}
+function remember() {
+  document.getElementById('ForgetForm').style.display = 'none';
+  document.getElementById('LoginForm').style.display = 'block';
+}
 
+document.forms.ForgetForm.addEventListener('submit', submitForget);
 
-// Disable form submissions if there are invalid fields
+function submitForget(event) {
+  event.preventDefault();
+  var email = document.getElementById('emailforget').value;
+    // [START sendpasswordemail]
+    firebase.auth().sendPasswordResetEmail(email).then(function() {
+      // Password Reset Email Sent!
+      // [START_EXCLUDE]
+      alert('تم إرسال رسالة لاسترجاع كلمة المرور');
+      // [END_EXCLUDE]
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // [START_EXCLUDE]
+      if (errorCode == 'auth/invalid-email') {
+        alert('أدخل بريد إلكتروني صحيح');
+      } else { alert('لا يوجد حساب مسجل لدينا بهذا البريد الإلكتروني')} {
+      }
+      console.log(error);
+      // [END_EXCLUDE]
+    });
+    // [END sendpasswordemail];
+}

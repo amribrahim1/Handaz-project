@@ -32,19 +32,19 @@ function submitForm(e) {
     }
     function initApp() {
 
-    firebase.auth().onAuthStateChanged(function(user) {
+		firebase.auth().onAuthStateChanged(function(user) {
 
-      if (user) {
+			if (user) {
 
         // [START_EXCLUDE]
         document.getElementById('quickstart-sign-up').innerHTML = '<button class="btn btn-primary" disabled>من فضلك أدخل بيانات لإكمال التسجيل</button>';
         document.getElementById('sign-out').style.display = "block";
         document.getElementById('DataForm').style.display = "block";
         // [END_EXCLUDE]
-      } 
+			} 
       // [START_EXCLUDE silent]
       // [END_EXCLUDE]
-    });
+		});
     // [END authstatelistener]
   }
 

@@ -32,14 +32,14 @@
           <button class="btn btn-dark" id="sign-out" style="width:30%;float:left;display:none;" onclick="signout()">تسجيل الخروج</button>
           <span style="margin-right: 45%;">أو&nbsp;&nbsp;<a href="userlogin.html">دخول</a></span>
         </form>
-        <form class="needs-validation needdata" name="DataForm" id="DataForm" novalidate>
+        <form class="needs-validation needdata" name="DataForm" id="DataForm">
           <div class="form-group">
             <input type="text" class="form-control" id="username" placeholder="اسم المستخدم *" pattern=".{3,}" name="uname" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">من فضلك ادخل اسم المستخدم</div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="phone" pattern="[0-9]{11,}" placeholder="رقم الموبايل" name="phone">
+            <input type="text" class="form-control" id="phone" pattern="[0-9]{11,}" title="أدخل رقم موبايل صحيح أو اتركها فارغة" placeholder="رقم الموبايل" name="phone">
           </div>
           <div class="form-group">
             <select name="yearpicker" id="yearpicker" type="year" class="form-control" required><option disabled selected value>سنة الميلاد *</option></select>

@@ -58,6 +58,8 @@ html, body {
     left: 8%;  
 }
 
+#ForgetForm {display: none;}
+
 @media (max-width: 978px) {
     .container {
         position: relative;
