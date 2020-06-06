@@ -78,7 +78,9 @@ function submitForget(event) {
     firebase.auth().sendPasswordResetEmail(email).then(function() {
       // Password Reset Email Sent!
       // [START_EXCLUDE]
-      alert('تم إرسال رسالة لاسترجاع كلمة المرور');
+      document.getElementById('sent').style.display = 'block';
+      document.getElementById('wrong').style.display = 'none';
+      document.getElementById('notfound').style.display = 'none';
       // [END_EXCLUDE]
     }).catch(function(error) {
       // Handle Errors here.
@@ -86,8 +88,13 @@ function submitForget(event) {
       var errorMessage = error.message;
       // [START_EXCLUDE]
       if (errorCode == 'auth/invalid-email') {
-        alert('أدخل بريد إلكتروني صحيح');
-      } else { alert('لا يوجد حساب مسجل لدينا بهذا البريد الإلكتروني')} {
+        document.getElementById('wrong').style.display = 'block';
+        document.getElementById('sent').style.display = 'none';
+        document.getElementById('notfound').style.display = 'none';
+      } else {
+        document.getElementById('notfound').style.display = 'block';
+        document.getElementById('sent').style.display = 'none';
+        document.getElementById('wrong').style.display = 'none';
       }
       console.log(error);
       // [END_EXCLUDE]

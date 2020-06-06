@@ -59,6 +59,10 @@ html, body {
 }
 
 #ForgetForm {display: none;}
+.invalid-feedback {
+    text-align: center;
+    font-size: 18px;
+}
 
 @media (max-width: 978px) {
     .container {

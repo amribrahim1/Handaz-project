@@ -33,6 +33,9 @@
         <form class="needs-validation" id="ForgetForm" name="ForgetForm">
           <div class="form-group">
             <input style="direction:ltr;" type="text" class="form-control" id="emailforget" placeholder="عنوان البريد الإلكتروني *" name="email" required>
+            <div class="invalid-feedback" id="sent">تم إرسال رسالة لاسترجاع كلمة المرور</div>
+            <div class="invalid-feedback" id="wrong">أدخل بريد إلكتروني صحيح</div>
+            <div class="invalid-feedback" id="notfound">لا يوجد حساب مسجل لدينا بهذا البريد الإلكتروني</div>
           </div>
           <button type="submit" class="btn btn-primary" name="submit">إرسال</button>
           <span style="margin-right: 45%;">أو&nbsp;&nbsp;<a onclick="remember()" href="#"> دخول</a></span>
