@@ -10,5 +10,6 @@ It's a website contains:
   * Register page.
   * Login page.
   * Profile page.
+(Try register and login)
 
 HTML, CSS, Javascript, Firebase.
