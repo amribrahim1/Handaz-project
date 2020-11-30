@@ -9,7 +9,7 @@ It's a website contains:
 * Authentication system based on Firebase:
   * Register page.
   * Login page.
-  * Profile page.
+  * Profile page.<br/>
 (Try register and login)
 
 HTML, CSS, Javascript, Firebase.
