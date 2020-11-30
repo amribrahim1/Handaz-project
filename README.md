@@ -5,10 +5,10 @@
 https://amribrahim1.github.io/Handaz-project
 
 It's a website contains:
-- A copy of shezlong.com homepage.
-- Authentication system based on Firebase:
--- Register page.
--- Login page.
--- Profile page.
+* A copy of shezlong.com homepage.
+* Authentication system based on Firebase:
+  * Register page.
+  * Login page.
+  * Profile page.
 
 HTML, CSS, Javascript, Firebase.
